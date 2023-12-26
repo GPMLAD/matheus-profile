@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', 'Raleway', serif;
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
 
 /*-- HEADER --*/
 header {
-  background-color: var(--brown-10);
+  background-color: var(--brown-12);
   padding: 16px 0;
   font-weight: bold;
 }
@@ -53,7 +53,7 @@ main {
 #perovskite {
   width: 100%;
   display: flex;
-  border-bottom: 2px solid var(--brown-8);
+  border-bottom: 2px solid var(--brown-10);
   padding: 16px 0;
   align-items: center;
 }
@@ -69,6 +69,11 @@ main {
   overflow: hidden;
 }
 
+.author {
+  color: var(--brown-10);
+  font-size: 48px;
+}
+
 /*-- RESEARCH --*/
 
 #research {
@@ -76,8 +81,8 @@ main {
   flex-direction: column;
   gap: 16px;
   text-align: center;
-  border-bottom: 2px solid var(--brown-8);
-  padding: 16px 0;
+  border-bottom: 2px solid var(--brown-10);
+  padding: 48px 0;
 }
 
 #research h2 {
@@ -88,7 +93,7 @@ main {
 
 #research p {
   font-size: 24px;
-  background-color: var(--brown-5);
+  background-color: var(--brown-3);
   color: var(--brown-10);
   padding: 16px 0;
   border-radius: 8px;
@@ -96,8 +101,11 @@ main {
 
 /*-- EXTENSION --*/
 #extension {
-  border-bottom: 2px solid var(--brown-8);
-  padding: 16px 0;
+  border-bottom: 2px solid var(--brown-10);
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
 #extension h2 {
@@ -109,8 +117,10 @@ main {
 
 #extension li {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
 #extension li div {
@@ -131,16 +141,16 @@ main {
 }
 
 #extension img {
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 300px;
   border-radius: 8px;
 }
 
 /*-- SIMULATION --*/
 
 #simulation {
-  border-bottom: 2px solid var(--brown-8);
-  padding: 16px 0;
+  border-bottom: 2px solid var(--brown-10);
+  padding: 48px 0;
 }
 
 #simulation h2 {
@@ -153,7 +163,7 @@ main {
 /*-- CONTACT --*/
 
 #contact {
-  padding: 16px 0;
+  padding: 48px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -194,8 +204,9 @@ main {
 
 /*-- FOOTER --*/
 footer {
-  background-color: var(--brown-10);
+  background-color: var(--brown-12);
   padding: 16px 0;
+  color: white;
 }
 
 footer > div {

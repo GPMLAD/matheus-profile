@@ -1,7 +1,7 @@
 #simulation {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   align-items: center;
 }
 
@@ -27,6 +27,7 @@
 form {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 form > div {
@@ -40,6 +41,9 @@ form > div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--brown-3);
+  border: none;
+  border-radius: 8px;
 }
 
 .inputs > div {
@@ -48,6 +52,7 @@ form > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
 .slider {
@@ -58,6 +63,8 @@ form > div {
 label {
   width: fit-content;
   font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 #start {
