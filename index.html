@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/simulation.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+    <title>Matheus</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#home">
+          <h1>Matheus</h1>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#research">Research</a>
+            </li>
+            <li>
+              <a href="#extension">Extension</a>
+            </li>
+            <li>
+              <a href="#simulation">Simulation</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section id="perovskite">
+        <blockquote>
+          <p>Highly organized research is guaranteed to produce nothing new!</p>
+          <p>-Frank Herbert</p>
+        </blockquote>
+      </section>
+      <section id="research">
+        <h2>Research</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          aliquam commodi quam beatae, repellendus quaerat at nulla dignissimos
+          maiores architecto accusamus fuga ab nisi corrupti est quae incidunt,
+          aspernatur sit.
+        </p>
+      </section>
+      <section id="extension">
+        <h2>Extension</h2>
+        <ul>
+          <li>
+            <div>
+              <h3>
+                CIÊNCIA SURREALISTA: o uso das obras de Salvador Dalí para a
+                discussão de Relações CTS e Física Moderna
+              </h3>
+              <p>
+                In: Ivanilda Higa, Caroline D. Pereira Portela, Débora Larissa
+                Brum Iankie, Gabriel Milani Karine Karsten, Luiz Gustavo Pampu,
+                Raquel M. Tomé Gonçalves, Sheila Sudul Marafigo. (Org.). A
+                PRODUÇÃO DO CONHECIMENTO NA FORMAÇÃO INICIAL DE PROFESSORES
+                propostas para o ensino elaboradas por licenciandos em Física.
+                1ed.Curitiba: CRV, 2022, v. 4, p. 19-32.
+              </p>
+              <a
+                href="https://www.editoracrv.com.br/produtos/detalhes/37331-crv"
+                >DOI: 10.24824/978652513344.7</a
+              >
+            </div>
+            <img
+              src="https://www.editoracrv.com.br/img_produtos/88134db21a51f2ff7b8c9be675a25f06.jpg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="simulation">
+        <h2>Simulation</h2>
+        <p></p>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <form action="">
+          <div>
+            <button type="button" id="start">Start</button>
+          </div>
+
+          <div class="inputs">
+            <div>
+              <label for="dy">Probabilidade de morte - dy:</label>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="dy"
+                  id="dy"
+                  oninput="updateValues(this)"
+                />
+                <span id="spanDY"></span>
+              </div>
+            </div>
+
+            <div>
+              <label for="dx">Probabilidade de morte - dx:</label>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="dx"
+                  id="dx"
+                  oninput="updateValues(this)"
+                />
+                <span id="spanDX"></span>
+              </div>
+            </div>
+
+            <div>
+              <label for="hy">Probabilidade de colonização - hy:</label>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="hy"
+                  id="hy"
+                  oninput="updateValues(this)"
+                />
+                <span id="spanHY"></span>
+              </div>
+            </div>
+
+            <div>
+              <label for="hx">Probabilidade de colonização - hx:</label>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="hx"
+                  id="hx"
+                  oninput="updateValues(this)"
+                />
+                <span id="spanHX"></span>
+              </div>
+            </div>
+
+            <div>
+              <label for="iy">Probabilidade de invasão - iy:</label>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="iy"
+                  id="iy"
+                  oninput="updateValues(this)"
+                />
+                <span id="spanIY"></span>
+              </div>
+            </div>
+
+            <div>
+              <label for="speed">Velocidade - Iterações por segundo:</label>
+              <div class="slider">
+                <input
+                  type="range"
+                  name="speed"
+                  id="speed"
+                  oninput="updateValues(this)"
+                />
+                <span id="spanSPEED"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <canvas id="myChart"></canvas>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="mailto:matheus.ribeiro@fisica.ufpr.br">
+                <h3>EMAIL</h3>
+                <span>matheus.ribeiro@fisica.ufpr.br</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com.br/maps/place/Setor+de+Ci%C3%AAncias+Exatas+-+UFPR/@-25.4506878,-49.2336642,17z/data=!4m14!1m7!3m6!1s0x94dce516c63d49a9:0x1cc3045eeda88271!2sUniversidade+Federal+do+Paran%C3%A1+-+Centro+Polit%C3%A9cnico!8m2!3d-25.4502422!4d-49.2331921!16s%2Fg%2F1tdjy4rk!3m5!1s0x94dce42fdcb74f03:0xc3ad218ea9877ec9!8m2!3d-25.4502557!4d-49.2309395!16s%2Fg%2F1pzwxqh76?entry=ttu"
+              >
+                <h3>POST OFFICE BOX</h3>
+                <span
+                  >Prédio do Setor de Ciências Exatas - Centro Politécnico - 1º
+                  andar - Sala 116 Caixa Postal 19044 81531-980, Curitiba,
+                  Paraná</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="http://lattes.cnpq.br/6294288593527992">
+                <h3>LATTES</h3>
+                <span>ID: 6294288593527992</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <h4>Desenvolvido por: GPMLAD</h4>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./src/scripts/main.js"></script>
+    <script type="module" src="./src/scripts/perovskite.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: min(90%, 1200px);
+}
+
+body {
+  --brown-1: #fefdfc;
+  --brown-2: #fcf9f6;
+  --brown-3: #f6eee7;
+  --brown-4: #f0e4d9;
+  --brown-5: #ebdaca;
+  --brown-6: #e4cdb7;
+  --brown-7: #dcbc9f;
+  --brown-8: #cea37e;
+  --brown-9: #ad7f58;
+  --brown-10: #a07553;
+  --brown-11: #815e46;
+  --brown-12: #3e332e;
+}
+
+/*-- HEADER --*/
+header {
+  background-color: var(--brown-10);
+  padding: 16px 0;
+  font-weight: bold;
+}
+
+header > div {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 16px;
+}
+
+/*-- MAIN --*/
+
+main {
+  background-color: var(--brown-1);
+}
+
+/*-- PEROVSKITE --*/
+
+#perovskite {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid var(--brown-8);
+  padding: 16px 0;
+  align-items: center;
+}
+
+#perovskite blockquote {
+  width: 50%;
+  text-align: center;
+  font-size: 56px;
+}
+
+#perovskite canvas {
+  width: 50%;
+  overflow: hidden;
+}
+
+/*-- RESEARCH --*/
+
+#research {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  border-bottom: 2px solid var(--brown-8);
+  padding: 16px 0;
+}
+
+#research h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--brown-10);
+}
+
+#research p {
+  font-size: 24px;
+  background-color: var(--brown-5);
+  color: var(--brown-10);
+  padding: 16px 0;
+  border-radius: 8px;
+}
+
+/*-- EXTENSION --*/
+#extension {
+  border-bottom: 2px solid var(--brown-8);
+  padding: 16px 0;
+}
+
+#extension h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--brown-10);
+  text-align: center;
+}
+
+#extension li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#extension li div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 70%;
+}
+
+#extension li div h3 {
+  color: var(--brown-11);
+  font-weight: bold;
+}
+
+#extension li div a {
+  color: var(--brown-11);
+  font-weight: 500;
+}
+
+#extension img {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/*-- SIMULATION --*/
+
+#simulation {
+  border-bottom: 2px solid var(--brown-8);
+  padding: 16px 0;
+}
+
+#simulation h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--brown-10);
+  text-align: center;
+}
+
+/*-- CONTACT --*/
+
+#contact {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#contact h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--brown-10);
+  text-align: center;
+}
+
+#contact ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact li {
+  width: 30%;
+}
+
+#contact li a {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+#contact h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--brown-10);
+}
+
+#contact span {
+  text-align: center;
+}
+
+/*-- FOOTER --*/
+footer {
+  background-color: var(--brown-10);
+  padding: 16px 0;
+}
+
+footer > div {
+  text-align: center;
+}

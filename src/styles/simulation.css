@@ -1,0 +1,94 @@
+#simulation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+#simulation h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--brown-10);
+}
+
+#simulation p {
+  color: black;
+}
+
+#canvas {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px 3px #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputs > div {
+  min-width: 30%;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  width: fit-content;
+  font-weight: bold;
+}
+
+#start {
+  border-radius: 8px;
+  border: none;
+  background-color: var(--brown-6);
+  font-weight: bolder;
+  font-size: large;
+  color: black;
+  padding: 8px;
+  width: min(30%, 400px);
+  cursor: pointer;
+}
+
+#simulation span {
+  font-weight: bolder;
+}
+
+input[type='range'] {
+  -webkit-appearance: none; /* Removendo o estilo padrão do WebKit/Blink */
+  height: 8px; /* Define a altura do slider */
+  background: #b34e7e; /* Cor de fundo do slider quando não selecionado */
+  outline: none; /* Remove a borda padrão do foco */
+}
+
+/* Estilizando a parte do slider já selecionada */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removendo o estilo padrão do WebKit/Blink */
+  width: 16px; /* Largura do polegar (thumb) */
+  height: 16px; /* Altura do polegar */
+  border-radius: 100%;
+  background: #000; /* Cor do polegar */
+  cursor: pointer; /* Cursor ao passar sobre o polegar */
+}
