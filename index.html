@@ -56,12 +56,46 @@
       </section>
       <section id="research">
         <h2>Research</h2>
+        <div>
+          <h3>Electronic Structure of Highly Correlated Materials.</h3>
+          <p>
+            The electronic structure of a multielectronic system is what
+            determines the vast majority of a material's physical and chemical
+            properties.
+          </p>
+        </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-          aliquam commodi quam beatae, repellendus quaerat at nulla dignissimos
-          maiores architecto accusamus fuga ab nisi corrupti est quae incidunt,
-          aspernatur sit.
+          In my research, I focus on determining the electronic structure of
+          materials belonging to the class of transition metal oxides (TMOs).
+          These consist on combinations of elements from the middle of the
+          periodic table, the transition metals, and oxygen, but also frequently
+          feature pre-and post transition elements. These show remarkable
+          properties such as exotic magnetic ordering, metal-insulator
+          transitions and even superconductivity. In order to study these
+          systems, I make theoretical calculations in the framework of Density
+          Functional Theory, which allows us to simulate these materials with a
+          high degree of accuracy with methods derived from first principles
+          <i>ab initio</i>.
         </p>
+        <p>
+          Currently, I am working on the effects of dimensionality on a set of
+          highly correlated materials known as Ruddlesden-Popper series,
+          characterized by the general chemical formula
+          Sr<sub>n+1</sub>TM<sub>n</sub>O<sub>3n+1</sub>, where TM is a
+          transition metal such as Fe, Ni or V. They can be understood as
+          vertical stacking of n perovskite structures SrTMO<sub>3</sub>
+          interweaved between strontium oxide SrO film layers. An ideal
+          strontium perovskite consist of a cube with strontium atoms at the
+          edges with a face-centered octahedra of oxygens inside it, housing the
+          transition metal atom at it's center. It is known that by changing n
+          in the series, one has a transition from a 3D material with only
+          perovskites (n = &infin; ) towards a fundamentally 2D material, whose
+          chemical and physical properties are confined along the
+          <i>ab</i> plane of the crystal. My work is focused on elucidating the
+          consequences of this progressive 2D confinement on the material's
+          electronic structure and it's magnetical ordering.
+        </p>
+        <img src="./src/assets/schema.png" alt="" />
       </section>
       <section id="extension">
         <h2>Extension</h2>
@@ -95,9 +129,39 @@
       <section id="simulation">
         <h2>Simulation</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ab.
-          Minima nihil aut sapiente. Quia molestiae a non itaque atque officia
-          adipisci, iure rerum repellat? Quas est adipisci beatae alias!
+          During my undergrad, I worked a bit with dynamical systems applied to
+          biology under the mentorship of
+          <a target="_blank" href="https://www.fisica.ufpr.br/araujosbl/"
+            >Prof. Sabrina de Araujo (UFPR)</a
+          >
+          . Our focus was to model the effects of ecological invasion between
+          two competing species following spatially discrete and averaged
+          approaches, that is, how the description of the sites alters the
+          dynamics of the species. This was motivated by the increasing need of
+          computational simulations in biology to allow the analysis of the
+          influence of specific parameters that might be very hard to manipulate
+          in an experimental setting. One of the approaches we used was the very
+          well known Cellular Automata model, in which space is treated as a
+          matrix whose elements represent sites, which can be singly occupied by
+          the native species (1), invasive species (2) or empty (0). The
+          parameters we used for this model are sub h<sub>x,y</sub>, the birth
+          rates of the native (x) and invasive species (y), their death rates
+          d<sub>x,y</sub> and an additional parameter i<sub>y</sub> which
+          represents the propagule pressure of the invasor. This parameter is
+          associated with the number of invasion events and the number of
+          individuals released in each event, here referring to an additional
+          probability of the invasive species to occupy the empty spaces. As
+          there is no predation being taken into account, both species can only
+          occupy empty spaces, which may become vacant when after their deaths.
+        </p>
+        <p>
+          Below is an interactive simulation of this model with the parameters
+          available for adjustment, feel free to play around! As it can be seen,
+          the dynamics is quite rich and also visually interesting. For more
+          details on the model and the subsequent analysis of the results, you
+          can check the final report of this undergrad research
+          <a target="_blank" href="./src/assets/relatorio.pdf">here</a>
+          (available only in portuguese).
         </p>
         <canvas id="canvas" width="600" height="600"></canvas>
         <form action="">
@@ -221,7 +285,9 @@
     </main>
     <footer>
       <div class="container">
-        <h4>Desenvolvido por: GPMLAD</h4>
+        <a target="_blank" href="https://github.com/GPMLAD"
+          >Developed by: Giovanni Perotto de Morais (GPMLAD)</a
+        >
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
