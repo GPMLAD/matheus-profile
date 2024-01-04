@@ -91,7 +91,10 @@ main {
   color: var(--brown-10);
 }
 
-#research p {
+#research div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   font-size: 24px;
   background-color: var(--brown-3);
   color: var(--brown-10);
@@ -99,6 +102,14 @@ main {
   border-radius: 8px;
 }
 
+#research div p {
+  font-size: 18px;
+}
+
+#research > p {
+  color: black;
+  line-height: 20px;
+}
 /*-- EXTENSION --*/
 #extension {
   border-bottom: 2px solid var(--brown-10);
@@ -135,6 +146,10 @@ main {
   font-weight: bold;
 }
 
+#extesion li div p {
+  line-height: 22px;
+}
+
 #extension li div a {
   color: var(--brown-11);
   font-weight: 500;
@@ -160,6 +175,9 @@ main {
   text-align: center;
 }
 
+#simulation a {
+  font-weight: bolder;
+}
 /*-- CONTACT --*/
 
 #contact {
