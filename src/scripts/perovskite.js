@@ -103,6 +103,9 @@ function rotateScene() {
   sphere.rotation.y += 0.005
   octahedron.rotation.y += 0.005
 
+  sphere.rotation.x += 0.0002
+  octahedron.rotation.x += 0.0002
+
   previousMousePosition = {
     x: window.innerWidth / 2,
     y: window.innerHeight / 2
