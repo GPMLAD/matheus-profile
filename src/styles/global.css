@@ -23,11 +23,15 @@ body {
   --brown-12: #3e332e;
 }
 
+
+
 /*-- HEADER --*/
 header {
   background-color: var(--brown-12);
   padding: 16px 0;
   font-weight: bold;
+  position: sticky;
+  top: 0;
 }
 
 header > div {
@@ -40,6 +44,34 @@ header > div {
 header nav ul {
   display: flex;
   gap: 16px;
+}
+
+header nav button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: #fefdfc;
+  font-weight: 700;
+  font-family: 'Merriweather', 'Raleway', serif;
+}
+
+header nav div{
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background-color: var(--brown-12);
+  border-radius:0 0 0 8px;
+  text-align: center;
+}
+
+header nav div ul{
+  display: flex;
+  flex-direction: column;
+  color: #fefdfc;
+  gap: 24px;
+  padding: 10px 20px;
 }
 
 /*-- MAIN --*/
@@ -108,7 +140,7 @@ main {
 
 #research > p {
   color: black;
-  line-height: 20px;
+  line-height: 22px;
 }
 /*-- EXTENSION --*/
 #extension {
@@ -144,6 +176,7 @@ main {
 #extension li div h3 {
   color: var(--brown-11);
   font-weight: bold;
+  line-height: 22px;
 }
 
 #extesion li div p {
@@ -161,6 +194,10 @@ main {
   border-radius: 8px;
 }
 
+#extension p{
+  line-height: 22px;
+}
+
 /*-- SIMULATION --*/
 
 #simulation {
@@ -172,6 +209,11 @@ main {
   font-size: 40px;
   font-weight: bold;
   color: var(--brown-10);
+  text-align: center;
+}
+
+#simulation p{
+  line-height: 22px;
   text-align: center;
 }
 
@@ -229,4 +271,36 @@ footer {
 
 footer > div {
   text-align: center;
+}
+
+@media (max-width:700px){
+  #perovskite{
+    flex-direction: column;
+  }
+
+  #perovskite blockquote{
+    width: 100%;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 120%;
+  }
+
+  .author {
+    color: var(--brown-10);
+    font-size: 38px;
+  }
+
+  #contact ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  #contact ul li{
+    width: 100%;
+  }
 }

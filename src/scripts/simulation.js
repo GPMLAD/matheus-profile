@@ -59,7 +59,6 @@ speedSlider.setAttribute('max', '10')
 speedSlider.setAttribute('step', '1')
 
 export function updateValues(element) {
-  console.log(element.value)
   if (element.id === 'hy') {
     hy = Number(element.value)
     spanHY.innerText = parseFloat(element.value).toFixed(1)
